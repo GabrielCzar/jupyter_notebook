@@ -13,3 +13,15 @@ def var(y):
     '''Calcula a variancia'''
     media = mean(y)
     return np.sum((y - media) ** 2) / len(y)
+
+def std(x,y):
+	return x ** y
+
+def diff(x,y):
+	if np.array_equal(x,y):
+		return 1
+	else:
+		return 0
+    	
+def confusion_matrix(y_true,y_pred):
+	return metrics.confusion_matrix(y_true,	y_pred)	
