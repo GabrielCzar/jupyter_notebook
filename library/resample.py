@@ -28,16 +28,15 @@ def split_stratified_train_test(y, perc_train, seed):
 	return idx_train,idx_test
 
 def split_k_fold(n_elem, n_splits=3, shuffle=True, seed=0):
-    indices = [ i for i in range(n_elem)]
-    np.random.seed(seed)
-    if shuffle:
-        np.random.shuffle(indices)
-    mean_size = round(n_elem/n_splits)
-    train = []
-    test = []
-    for i in range(n_splits):
-		train1 = []
-		test1 = []
+	indices = [ i for i in range(n_elem)]
+	np.random.seed(seed)
+	if shuffle:
+		np.random.shuffle(indices)
+	mean_size = round(n_elem/n_splits)
+	train = []
+	test = []
+	for i in range(n_splits):
+		train1 = [];test1 = []
 
 		if(i == n_splits-1):
 			flag =True
