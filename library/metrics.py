@@ -34,9 +34,10 @@ def precision(y_true, y_pred):
 
     return precision
 
-def f1_measure(y, y_pred):
-    mat =  metrics.confusion_matrix(y, y_pred, labels=np.unique(y))
-    return 2*((precision(y, y_pred)*recall(y, y_pred))/(precision(y, y_pred)+recall(y, y_pred)))
+def f1_measure(y_true,y_pred):
+	prec = np.array(precision(y_true,y_pred))
+	rec = np.array(recall(y_true,y_pred))
+	return (2 * prec * rec) / (prec + rec)
 
 def recall(y_true, y_pred):
     precision = []
