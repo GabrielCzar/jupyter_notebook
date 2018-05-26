@@ -1,3 +1,4 @@
-# Repositorio de Estudo
+# Job Salary Prediction
+_Trabalho final de aprendizagem de maquina_
 
-Resolução das listas disponibilizadas por [Régis Pires - Machine Learning](https://sites.google.com/site/ufcregis/home/2018-1/aprendizado-de-maquina)
+Predict the salary of any UK job ad based on its contents
