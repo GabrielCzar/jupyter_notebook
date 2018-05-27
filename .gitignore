@@ -1,5 +1,6 @@
 .ipynb_checkpoints
 
+data/
 # Created by https://www.gitignore.io/api/python,jupyternotebook
 
 ### JupyterNotebook ###
